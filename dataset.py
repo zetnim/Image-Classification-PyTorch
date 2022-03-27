@@ -10,8 +10,8 @@ class initialize_dataset:
         self.MNIST = MNIST
 
     def load_dataset(self, transform=False):
-        path = "/home/mayur/Desktop/Pytorch/data"
-        #path = './data'
+        #path = "/home/mayur/Desktop/Pytorch/data"
+        path = "./data"
         if transform:
             transform = augmentation(image_resolution=self.image_resolution)
         elif self.MNIST:

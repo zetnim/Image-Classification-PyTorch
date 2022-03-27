@@ -135,7 +135,8 @@ class LeNet_BN(nn.Module):
 
 #datasets
 
-path = "/home/mayur/Desktop/Pytorch/data"
+#path = "/home/mayur/Desktop/Pytorch/data"
+path = "./data"
 
 train_dataset = torchvision.datasets.MNIST(root=path, train=True,
 											transform = transforms.ToTensor(),
